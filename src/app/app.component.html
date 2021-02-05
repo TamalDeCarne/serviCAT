@@ -1,0 +1,29 @@
+<app-header>
+  <mat-toolbar color="primary" style="position:sticky;" class="app-header">
+    <div class="menu-title">
+      <a href="#" class="" style="vertical-align: middle;">ServiCAT </a>
+    </div>
+    <span class="nav-tool-items">
+      <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Registrate aquí</a>
+      <a mat-button routerLink="login" routerLinkActive="active" class="login-button">Iniciar Sesión</a>
+    </span>
+  </mat-toolbar>
+</app-header>
+
+
+    <div class="container">
+      <span href="" class="title">¡Regístrate Ya!</span>
+      <mat-card class="" *ngFor="let request of requests">
+        <mat-card-header>
+          <mat-card-title>
+            {{request.title}}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{request.title}}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{request.body}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>

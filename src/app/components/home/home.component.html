@@ -1,0 +1,28 @@
+  <mat-grid-list cols="12" rowHeight="fit" style="height: 100%;">
+    <mat-grid-tile colspan="8" id="request">
+      <div class="container">
+        <span class="title" *ngIf="!isLogged">¡Regístrate Ya!</span>
+        <br>
+        <span class="subtitle"> Trabajos más recientes </span>
+            <mat-expansion-panel *ngFor="let request of requests" style="margin-top: 1.5rem;">
+              <mat-expansion-panel-header>
+                <mat-panel-title class="title-request">
+                  {{ request.title }}
+                </mat-panel-title>
+                <mat-panel-description>
+                  {{ request.category }} | {{ request.specialty }}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+                <div class="description" >
+                  <p class="body-request">{{ request.body }}</p>
+                  <p class="name-request">{{ request.user_fname }} {{ request.user_lname }}</p>
+                  <p style="text-align: end;">{{ request.city }}, {{ request.state }} </p>
+                </div>
+            </mat-expansion-panel>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4">
+      <img id="worker" src="../../../assets/img/pngkey_worker_stock_photo.png" alt="" srcset="">
+    </mat-grid-tile>
+  </mat-grid-list>
+  

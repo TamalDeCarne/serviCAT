@@ -11,3 +11,15 @@
 ### Changed
 - app.module, added new modules
 - index.html, added navbar
+
+## [0.1.0] - 2021-20-04
+
+### Added
+- Components: User Modal
+- Services: API Serivce
+- Models: User, Cities, States, Requests, Requests_View, Categories, Specialties
+- Cookie Service
+
+### Changed
+- Components: user interface, register, log in
+- app.module, added new modules

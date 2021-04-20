@@ -10,10 +10,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.title {
+span.title {
     text-decoration: none;
     color: #FF8A00;
     font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+span.subtitle {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 5rem;
 }
 
 .app-header {
@@ -29,8 +38,6 @@ body {
 }
 
 .login-button {
-    width: 121px;
-    height: 41px;
     background: #2555FF;
     color: white;
     border-radius: 25px;
@@ -40,16 +47,32 @@ body {
 
 .container {
     position: relative;
-    top: 80px;
     height: 100%;
+    width: 100%;
+    margin: 2rem 5rem !important;
 }
 
-.container .mat-card {
-    padding: 40px 70px 50px;
+img#worker {
+    height: inherit !important;
+    width: auto !important;
 }
 
-.card {
-    justify-content: center;
-    /*padding: 500px;*/
-    margin: 40px;
+.container mat-expansion-panel {
+    align-content: center;
+}
+
+.title-request {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.body-request {
+    text-align: start;
+    font-size: 18px;
+}
+
+.name-request {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 300;
 }

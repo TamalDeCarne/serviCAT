@@ -21,7 +21,7 @@ import { MatCardModule,
     MatDialogModule,
     MatStepperModule,
     MatExpansionModule,
-    MatAccordion 
+    MatAccordion
 } from '@angular/material';
 
 @NgModule({

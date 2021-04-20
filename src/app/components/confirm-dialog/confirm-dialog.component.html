@@ -1,0 +1,10 @@
+<div class="dialog-recreate">
+    <p mat-dialog-title>{{data.title}}</p>
+    <p display-2 fx >{{data.message}}</p>
+
+
+    <div mat-dialog-actions>
+        <button mat-raised-button color="primary" (click)="onConfirm()" style="width: 45%;">Si</button>
+        <button mat-button (click)="onDismiss()" style="width: 45%;">No</button>
+    </div>
+</div>

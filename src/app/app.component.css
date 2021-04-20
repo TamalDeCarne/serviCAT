@@ -1,0 +1,78 @@
+html, 
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+span.title {
+    text-decoration: none;
+    color: #FF8A00;
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+span.subtitle {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 5rem;
+}
+
+.app-header {
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    color: rgb(103, 58, 183);
+    box-shadow: 0px 2px 2px 2px hsla(262, 52%, 47%, 0.11);
+}
+
+.login-button {
+    background: #2555FF;
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 2rem 5rem !important;
+}
+
+img#worker {
+    height: inherit !important;
+    width: auto !important;
+}
+
+.container mat-expansion-panel {
+    align-content: center;
+}
+
+.title-request {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.body-request {
+    text-align: start;
+    font-size: 18px;
+}
+
+.name-request {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 300;
+}

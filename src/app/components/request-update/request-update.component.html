@@ -1,0 +1,49 @@
+<div mat-dialog-content>
+    <mat-card>
+        <mat-card-content>
+            <form [formGroup]="requestForm">
+                <mat-form-field apperance="outline" class="full-width">
+                  <input matInput type="text" placeholder="Título" formControlName="title">
+                </mat-form-field>
+      
+                <mat-form-field apperance="outline" class="full-width">
+                  <mat-select formControlName="state_id" name="stateSelect" placeholder="Estado">
+                    <mat-option [(value)]="state.id" *ngFor="let state of states" (click)="loadCities(state.id)">
+                      {{ state.name }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+      
+                <mat-form-field apperance="outline" class="full-width">
+                  <mat-select formControlName="city_id" name="citySelect" placeholder="Ciudad">
+                    <mat-option [(value)]="city.id" *ngFor="let city of cities">
+                      {{ city.name }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+      
+                <mat-form-field apperance="outline" class="full-width">
+                  <mat-select formControlName="category_id" name="categorySelect" placeholder="Categoría">
+                    <mat-option [(value)]="category.id" *ngFor="let category of categories" (click)="loadSpecialties(category.id)">
+                      {{ category.name }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+      
+                <mat-form-field apperance="outline" class="full-width">
+                  <mat-select formControlName="specialty_id" name="specialtySelect" placeholder="Especialidad">
+                    <mat-option [(value)]="specialty.id" *ngFor="let specialty of specialties">
+                      {{ specialty.name }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+      
+                <mat-form-field apperance="outline" class="full-width">
+                  <textarea matInput type="text" placeholder="Cuerpo" formControlName="body"></textarea>
+                </mat-form-field>
+      
+                <button mat-icon-button (click)="updateRequest()"> <mat-icon>add_task</mat-icon> </button>
+              </form>
+        </mat-card-content>
+    </mat-card>
+</div>
